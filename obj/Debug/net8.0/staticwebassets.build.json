@@ -1,0 +1,77 @@
+{
+  "Version": 1,
+  "Hash": "KNqeYuavYaRF/uzdeiV6hDt9E/POGGHj1BhXFEmgunU=",
+  "Source": "TaskManagerApi",
+  "BasePath": "_content/TaskManagerApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "TaskManagerApi\\wwwroot",
+      "Source": "TaskManagerApi",
+      "ContentRoot": "C:\\Projects\\TaskManagerApi\\wwwroot\\",
+      "BasePath": "_content/TaskManagerApi",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Projects\\TaskManagerApi\\wwwroot\\index.html",
+      "SourceId": "TaskManagerApi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Projects\\TaskManagerApi\\wwwroot\\",
+      "BasePath": "_content/TaskManagerApi",
+      "RelativePath": "index.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\index.html"
+    },
+    {
+      "Identity": "C:\\Projects\\TaskManagerApi\\wwwroot\\script.js",
+      "SourceId": "TaskManagerApi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Projects\\TaskManagerApi\\wwwroot\\",
+      "BasePath": "_content/TaskManagerApi",
+      "RelativePath": "script.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\script.js"
+    },
+    {
+      "Identity": "C:\\Projects\\TaskManagerApi\\wwwroot\\style.css",
+      "SourceId": "TaskManagerApi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Projects\\TaskManagerApi\\wwwroot\\",
+      "BasePath": "_content/TaskManagerApi",
+      "RelativePath": "style.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\style.css"
+    }
+  ]
+}

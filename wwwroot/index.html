@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Görev Panosu</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="blueprint-grid"></div>
+
+<div class="wrap">
+
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-mark">§</span>
+      <div>
+        <h1>Görev Panosu</h1>
+        <p class="subtitle">TaskManagerApi &middot; iş takip cetveli</p>
+      </div>
+    </div>
+    <div class="stats" id="stats">
+      <div class="stat">
+        <span class="stat-num" id="statTotal">0</span>
+        <span class="stat-label">toplam</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num" id="statActive">0</span>
+        <span class="stat-label">açık</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num" id="statDone">0</span>
+        <span class="stat-label">tamam</span>
+      </div>
+    </div>
+  </header>
+
+  <section class="composer">
+    <form id="taskForm">
+      <input type="text" id="titleInput" placeholder="Yeni görev başlığı… (örn. Rapor taslağını gönder)" maxlength="100" required>
+      <input type="text" id="descInput" placeholder="Açıklama (opsiyonel)" maxlength="500">
+      <button type="submit" class="btn-primary">
+        <span>Ekle</span>
+      </button>
+    </form>
+    <p class="form-error" id="formError"></p>
+  </section>
+
+  <section class="toolbar">
+    <div class="search-box">
+      <input type="text" id="searchInput" placeholder="Başlıkta ara…">
+    </div>
+    <div class="filter-tabs" id="filterTabs">
+      <button class="tab active" data-filter="all">Tümü</button>
+      <button class="tab" data-filter="active">Açık</button>
+      <button class="tab" data-filter="done">Tamamlanan</button>
+    </div>
+  </section>
+
+  <section class="board" id="board">
+    <div class="loading" id="loadingState">Kayıtlar yükleniyor…</div>
+  </section>
+
+  <div class="empty-state" id="emptyState" hidden>
+    <div class="empty-mark">⌷</div>
+    <p>Henüz görev yok.</p>
+    <span>Yukarıdan ilk görevini ekle.</span>
+  </div>
+
+  <div class="conn-error" id="connError" hidden>
+    <strong>API'ye bağlanılamadı.</strong>
+    <span>script.js içindeki <code>API_BASE</code> adresinin, <code>dotnet run</code> çıktısındaki adresle eşleştiğinden emin ol.</span>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
